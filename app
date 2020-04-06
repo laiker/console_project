@@ -5,6 +5,10 @@ use App\SayHello;
 
 $app = new \Symfony\Component\Console\Application('demo application');
 
+
 $app->add(new SayHello());
+
+$app->add(new \App\Times());
+
 
 $app->run();
